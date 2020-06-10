@@ -14,8 +14,8 @@ build:
       uses: actions/checkout@v2
     - name: Build
       run: |
-      cargo build --release
-      zip --junk-paths target/release/cargo_hello hello_cargo-${{ github.ref }}-linux-amd64.zip
+        cargo build --release
+        zip --junk-paths target/release/cargo_hello hello_cargo-${{ github.ref }}-linux-amd64.zip
     - name: Create Release
       id: create_release
       uses: actions/create-release@v1
