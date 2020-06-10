@@ -1,12 +1,12 @@
 on:
-    push:
-      tags:
-      - 'v*'
+  push:
+    tags:
+    - 'v*'
   
 name: Release
 
 jobs:
-build:
+  build:
     name: Release
     runs-on: ubuntu-latest
     steps:
